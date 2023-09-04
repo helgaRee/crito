@@ -1,0 +1,22 @@
+header {
+display: flex;
+    background-color: #F0EFE9;
+    /* placera headern i mitten */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+
+
+    .container {
+        display: flex;
+        gap: 78px;
+
+        border: 1px solid black; 
+        @media (min-width: 2500px) {
+            width: 2048px;
+        }
+    }
+
+
+}
+
