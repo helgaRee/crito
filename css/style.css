@@ -1,22 +1,152 @@
-header {
-display: flex;
-    background-color: #F0EFE9;
-    /* placera headern i mitten */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
 
-
-    .container {
-        display: flex;
-        gap: 78px;
-
-        border: 1px solid black; 
-        @media (min-width: 2500px) {
-            width: 2048px;
-        }
-    }
-
-
+html,
+body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
+.btn-yellow {
+  background-color: #f9d783;
+  color: #191919;
+  border-color: 1 ps solid #f9d783;
+  border-radius: 25px;
+  padding: 8px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #191919;
+    border: 10 px solid #191919;
+    color: #f0efe9;
+  }
+}
+.btn-yellow > i {
+  margin-left: 7px;
+  font-size: 0.9em;
+}
+
+header {
+  display: flex;
+  background-color: #f0efe9;
+  /* placera headern i mitten */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 78px;
+
+    .menu-bars {
+      font-size: 25px;
+      border: none;
+      background-color: transparent;
+
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    .menu {
+      display: none;
+      flex: 1;
+
+      @media (min-width: 992px) {
+        display: block;
+      }
+
+      .top-menu {
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: 1px solid #dad9d3;
+        align-items: center;
+
+        @media (min-width: 1200px) {
+          justify-content: space-between;
+        }
+
+        .contact-information {
+          display: none;
+          padding: 10px;
+          width: 100%;
+
+          @media (min-width: 1200px) {
+            display: flex;
+          }
+
+          .content-box {
+            margin-right: 30px;
+            padding-right: 25px;
+            border-right: 1px solid #dad9d3;
+            font-family: "Inter", sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+
+            .contact-icon {
+              margin-right: 5px;
+              font-size: 1.2em;
+              color: #66666666;
+            }
+
+            &.last {
+              border: none;
+            }
+          }
+        }
+        .social-media {
+          @media (min-width: 1200px) {
+            display: flex;
+          }
+
+          .social-media-icon {
+            color: #191919;
+            font-size: 1.3rem;
+            margin-left: 10px;
+
+            &:hover {
+              color: #666666;
+            }
+          }
+        }
+      }
+
+      .main-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+      }
+
+      .main-menu > nav > a {
+        display: inline-block;
+        text-decoration: none;
+        color: #191919;
+        margin-right: 35px;
+        position: relative;
+
+        &.active {
+          font-weight: 500;
+        }
+
+        &.active::after,
+        &:hover::after {
+          content: "";
+          position: absolute;
+          font-weight: 500;
+          height: 2px;
+          width: 15px;
+          background-color: #191919;
+          left: 50%;
+          bottom: -3px;
+          transform: translate((calc(50% - 15px)));
+        }
+      }
+    }
+  }
+}
