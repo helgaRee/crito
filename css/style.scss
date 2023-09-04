@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700&family=Hanken+Grotesk:wght@200;300;400;500;600&display=swap');
 
 * {
     box-sizing: border-box; // tar med border i beräkning vid sättning av storlek (borderna tar alltså inte upp 2 px extra p detta sätt)
@@ -11,18 +12,24 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin: 0; 
+    background-color: #F0EFE9;
 }
+
+
 
 .btn-yellow {
     background-color: #F9D783;
     color: #191919;
-    border-color: 1 ps solid #F9D783;
+    border-color: 1px solid #F9D783;
     border-radius: 25px;
     padding: 8px 25px;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-
+    i {
+        margin-left: 7px;
+        font-size: 0.9em;
+    }
     &:hover {
         background-color: #191919;
         border: 10 px solid #191919;
@@ -30,9 +37,14 @@ body {
     }
 }
 
-.btn-yellow>i {
-    margin-left: 7px;
-    font-size: 0.9em;
+.btn-transparent {
+    color: #191919;
+    border-color: 1px solid #F9D783;
+    border-radius: 25px;
+    padding: 8px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 header {
@@ -170,6 +182,42 @@ header {
             }
         }
     }
+}
+
+// STYLING BANNER
+
+.banner {
+    background-color: #F0EFE9;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    
+
+    .pitch{
+        
+    }
+
+    .text-large{
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    @media (min-width: 992px) {
+        .text-large {
+            // font-size: 96px; i desktop
+            // font-weight: 800; i desktop
+            font-family: 'DM Sans', sans-serif;
+        }
+    }
+}
+
+
+
+.text-small {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 
