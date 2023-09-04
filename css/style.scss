@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
 
-html, body {
+* {
+    box-sizing: border-box; // tar med border i beräkning vid sättning av storlek (borderna tar alltså inte upp 2 px extra p detta sätt)
+}
+
+html,
+body {
     color: #191919;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    margin: 0; 
 }
 
 .btn-yellow {
@@ -23,13 +29,14 @@ html, body {
         color: #F0EFE9;
     }
 }
-.btn-yellow > i {
+
+.btn-yellow>i {
     margin-left: 7px;
     font-size: 0.9em;
 }
 
 header {
-display: flex;
+    display: flex;
     background-color: #F0EFE9;
     /* placera headern i mitten */
     margin-left: auto;
@@ -42,7 +49,7 @@ display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 78px;
- 
+
 
         .menu-bars {
             font-size: 25px;
@@ -51,27 +58,27 @@ display: flex;
 
 
             @media (min-width: 992px) {
-                    display: none; 
-            
-                }
+                display: none;
+
+            }
         }
 
         .menu {
             display: none;
             flex: 1;
-            
+
 
             @media (min-width: 992px) {
                 display: block;
             }
-            
+
 
 
             .top-menu {
                 display: flex;
                 justify-content: flex-end;
                 border-bottom: 1px solid #DAD9D3;
-                align-items: center; 
+                align-items: center;
 
                 @media (min-width: 1200px) {
                     justify-content: space-between;
@@ -95,33 +102,34 @@ display: flex;
                         font-size: 15px;
                         font-weight: 300;
 
-                        .contact-icon {
-                            margin-right: 5px;  
+                        i {
+                            margin-right: 5px;
                             font-size: 1.2em;
-                            color: #66666666;                 
+                            color: #66666666;
                         }
 
                         &.last {
                             border: none;
                         }
-                    } 
-              
+                    }
+
                 }
-                .social-media{
+
+                .social-media {
                     @media (min-width: 1200px) {
                         display: flex;
                     }
-                
-                    .social-media-icon  {
+
+                    i {
                         color: #191919;
                         font-size: 1.3rem;
                         margin-left: 10px;
 
                         &:hover {
-                            color:#666666;
+                            color: #666666;
                         }
-                    }                  
-                } 
+                    }
+                }
 
             }
 
@@ -133,17 +141,20 @@ display: flex;
 
             }
 
-            .main-menu > nav > a  {
+
+            .main-menu>nav>a {
+
+
                 display: inline-block;
                 text-decoration: none;
-                color: #191919; 
-                margin-right: 35px; 
+                color: #191919;
+                margin-right: 35px;
                 position: relative;
-                
+
                 &.active {
                     font-weight: 500;
                 }
-                
+
                 &.active::after,
                 &:hover::after {
                     content: '';
@@ -156,14 +167,13 @@ display: flex;
                     bottom: -3px;
                     transform: translate((calc(50% - 15px)));
                 }
-           
-                                         
             }
-
         }
     }
-    
-
 }
 
-  
+
+
+
+
+
