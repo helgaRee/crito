@@ -11,7 +11,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  background-color: #F0EFE9;
 }
 
 .btn-yellow {
@@ -178,9 +177,14 @@ header .container .btn-login {
   align-items: center;
 }
 .showcase .container .content {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .showcase .container .content {
+    text-align: left;
+  }
 }
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
@@ -189,21 +193,38 @@ header .container .btn-login {
 }
 @media (min-width: 768px) {
   .showcase .container .content h1 {
-    font-size: 70;
+    font-size: 70px;
   }
 }
 @media (min-width: 1400px) {
   .showcase .container .content h1 {
-    font-size: 86;
+    font-size: 86px;
   }
 }
 .showcase .container .content p {
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content p {
+    font-size: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .showcase .container .content a {
-  margin-right: 10px;
+  margin-right: 0;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .showcase .container .content a {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 .showcase .container img {
   margin-right: -50px;
@@ -212,5 +233,31 @@ header .container .btn-login {
 @media (min-width: 1200px) {
   .showcase .container img {
     display: block;
+  }
+}
+
+.img-advertising {
+  display: flex;
+  justify-content: center;
+}
+.img-advertising img {
+  display: none;
+}
+@media (min-width: 992px) {
+  .img-advertising img {
+    display: block;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .img-advertising img {
+    display: block;
+    padding-top: 98px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
