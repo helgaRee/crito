@@ -15,6 +15,26 @@ body {
     // background-color: #F0EFE9;
 }
 
+.heading-red {
+    color: #F94D1C;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h3 {
+    color: #191919;
+    font-family: 'DM Sans', sans-serif; 
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+        font-size: 45px;                   
+    }
+}  
+
 
 
 .btn-yellow {
@@ -58,10 +78,31 @@ body {
     }
 }
 
-.btn-features {
-    // padding-right: 18px;
-    // padding-left: 18px;
+.btn-black {
+    background-color: #191919;
+    color: #F0EFE9;
+    border-color: 1px solid #F9D783;
+    border-radius: 25px;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    i {
+        // margin-left: 7px;
+        font-size: 0.9em;
+    }
+    &:hover {
+        background-color: #F9D783;
+        border: 10 px solid #F9D783;
+        color:  #191919;
+    }
 }
+
+
+
+
+
+
 // HEADER
 header {
     display: flex;
@@ -230,7 +271,7 @@ header {
                     font-size: 86px;
                 }
             }
-            p {
+            h3 {    // ELLER P TAGG?
                 font-size: 18px;
                 padding-top: 40px;
                 padding-bottom: 40px;
@@ -302,7 +343,6 @@ header {
 .features {
     padding: 20px;
     margin-top: 50px;
-    border: 1px solid black;
     @media (min-width: 1200px) {
         padding: 70px;    
         display: flex;
@@ -312,7 +352,7 @@ header {
         @media (min-width: 1200px) {
             display: flex;  
             margin: 0 auto;  
-            
+            border: 1px solid black;
                   
         }
         .content{
@@ -336,7 +376,7 @@ header {
                 margin-bottom: 30px;
                 margin-top: 30px;
             }
-            p{
+            h3 {
                 color: #191919;
                 font-family: 'DM Sans', sans-serif; 
                 font-size: 28px;
@@ -344,7 +384,12 @@ header {
                 margin-bottom: 30px;
 
                 @media (min-width: 768px) {
-                    font-size: 45px;                   
+                    font-size: 45px;  
+                 
+                }
+                @media (min-width: 1200px) {
+                    // font-size: 45px;  
+                    max-width: 90%;                 
                 }
             }          
             a {
@@ -432,3 +477,74 @@ header {
         }
     }
 }
+
+// ABOUT
+.about {
+    
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 40px;
+    align-items: center;
+   // margin-left: -20px; flytta hela sektionen aningen åt vänster
+
+    @media (min-width:1200px) {
+        display: flex;
+        flex-direction: row;  
+        text-align: left;
+        border: 1px solid black;
+        padding: 60px;
+        
+    }
+    
+    .founder{
+        @media (min-width:1200px) {
+            text-align: left;  
+          
+           }
+        text-align: center;
+        img{
+            width: 50%;
+
+            @media (min-width:1200px) {
+              width: 100%;  
+              margin-top: 30px;    
+            }
+            // .background-frame {
+            //     @media (min-width:1200px) {
+            //         background-color: aqua; 
+            //         border: 1px solid black;
+            //       }
+            // }
+        }
+        p {
+            @media (min-width:1200px) {
+                position: relative;
+                bottom: 170px;
+                left: -144px;            
+                background-color: #BEEBFF;
+                padding:30px 20px;
+                width: 90%;
+
+              }
+            
+            font-family: 'DM Sans', sans-serif; 
+            span{
+                color:#F94D1C;
+                font-weight: 700;             
+            }
+        }
+    }
+    .content{
+        @media (min-width:1200px) {         
+            align-self:flex-start;
+           }
+
+        h2{
+
+        }
+        h3{
+        }
+    }
+}
+
