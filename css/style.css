@@ -42,6 +42,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
+  border: 1px solid #191919;
 }
 .btn-transparent i {
   margin-left: 7px;
@@ -188,7 +189,7 @@ header .container .btn-login {
 }
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
 }
 @media (min-width: 768px) {
@@ -216,7 +217,8 @@ header .container .btn-login {
   }
 }
 .showcase .container .content a {
-  margin-right: 0;
+  margin-right: 40px;
+  margin-left: 40px;
   display: block;
   margin-bottom: 20px;
 }
@@ -260,4 +262,70 @@ header .container .btn-login {
     padding-right: 50px;
     padding-left: 50px;
   }
+}
+
+.features {
+  padding: 20px;
+}
+.features .container .content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .features .container .content {
+    text-align: left;
+  }
+}
+.features .container .content h2 {
+  color: #F94D1C;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.features .container .content p {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .features .container .content p {
+    font-size: 45px;
+  }
+}
+.features .container a {
+  margin-right: 40px;
+  margin-left: 40px;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .features .container a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .features .container .features-consulting {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+.features .container .features-consulting .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features .container .features-consulting .box img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 20%;
+}
+.features .container .features-consulting .box p {
+  padding: 10px 10px;
+  text-align: center;
 }

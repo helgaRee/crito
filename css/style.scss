@@ -46,6 +46,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
+    border: 1px solid #191919;
     i {
         margin-left: 7px;
         font-size: 0.9em;
@@ -56,6 +57,12 @@ body {
         color: #F0EFE9;
     }
 }
+
+.btn-features {
+    // padding-right: 18px;
+    // padding-left: 18px;
+}
+// HEADER
 header {
     display: flex;
     background-color: #F0EFE9;
@@ -192,6 +199,8 @@ header {
         }
     }
 }
+
+// SHOWCASE
 .showcase {
     background-color: #F0EFE9;
     .container {
@@ -210,7 +219,7 @@ header {
 
             h1 {
                 font-family: 'DM Sans', sans-serif; 
-                font-weight: 800;
+                font-weight: 700;
                 font-size: 40px;
                 
                 @media (min-width: 768px) {
@@ -235,7 +244,9 @@ header {
             }
         }
             a {
-                margin-right: 0;
+                margin-right: 40px;
+                margin-left: 40px;
+                // margin: 20px 20px;
                 display: block;
                 margin-bottom: 20px;
 
@@ -258,6 +269,7 @@ header {
     }   
 }
 
+//ADVERTISING
 .img-advertising {
     display: flex;
     
@@ -285,3 +297,87 @@ header {
     }
 }
 
+
+//FEATURES
+.features {
+    padding: 20px;
+    .container {    
+
+        .content{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+
+            @media (min-width: 1200px) {
+                text-align: left;
+            }
+
+            h2 {
+                color: #F94D1C;
+                font-size: 18px;
+                font-family: 'Inter', sans-serif;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+            p{
+                color: #191919;
+                font-family: 'DM Sans', sans-serif; 
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 30px;
+                // padding-left: 20px;
+                // padding-right: 20px;
+
+                @media (min-width: 768px) {
+                    font-size: 45px;                   
+                }
+            }
+        }
+            
+            a {
+                margin-right: 40px;
+                margin-left: 40px;
+                 // margin: 20px 20px;
+                display: block;
+                margin-bottom: 20px;
+
+    
+                @media (min-width: 768px) {
+                        display: inline-block;
+                        margin-right: 10px;
+                }
+            }
+
+            .features-consulting{
+
+            
+                @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                // gap: 20px;
+                }
+
+                .box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+
+                    img{
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                    width: 20%;
+                    }
+
+                    h3{ 
+
+                    }
+                    p {
+                    padding: 10px 10px;
+                    text-align: center;
+                    }
+                }
+        }
+    }
+}
