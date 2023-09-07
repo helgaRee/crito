@@ -1,69 +1,141 @@
-// ABOUT
-.about {
-    
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center;
-    padding: 40px 40px;
-    align-items: center;
-   // margin-left: -20px; flytta hela sektionen aningen åt vänster
-
-    @media (min-width:1200px) {
-        display: flex;
-        flex-direction: row;  
-        text-align: left;
-        border: 1px solid black;
-        padding: 60px;
-        
-    }
-    
-    .founder{
-        @media (min-width:1200px) {
-            text-align: left;  
-          
-           }
-        text-align: center;
-        img{
-            width: 50%;
-
-            @media (min-width:1200px) {
-              width: 100%;  
-              margin-top: 30px;    
-            }
-            // .background-frame {
-            //     @media (min-width:1200px) {
-            //         background-color: aqua; 
-            //         border: 1px solid black;
-            //       }
-            // }
-        }
-        p {
-            @media (min-width:1200px) {
-                position: relative;
-                bottom: 170px;
-                left: -144px;            
-                background-color: #BEEBFF;
-                padding:30px 20px;
-                width: 90%;
-
-              }
-            
-            font-family: $font-family-DM;
-            span{
-                color:#F94D1C;
-                font-weight: 700;             
-            }
-        }
-    }
-    .content{
-        @media (min-width:1200px) {         
-            align-self:flex-start;
-           }
-
-        h2{
-
-        }
-        h3{
-        }
-    }
+/* Grundläggande stil för mobila enheter (mindre än 1200px bredd) */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
 }
+
+.about {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.founder {
+  text-align: center;
+}
+
+/* Stilar för skärmar med en bredd på 1200px eller mer */
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .about {
+    flex-direction: row;
+  }
+
+  .founder {
+    text-align: left;
+    flex: 1; /* Ta upp 1/3 av utrymmet */
+  }
+
+  .content {
+    flex: 2; /* Ta upp 2/3 av utrymmet */
+    margin-left: 20px; /* Lägg till marginal mellan .founder och .content */
+    max-width: 50%; /* Sätt en maxbredd om det behövs */
+    @media (min-width: 1200px) {
+      .content {
+        flex: 1; /* Ändra detta värde beroende på önskad storlek */
+        max-width: 40%; /* Sätt en maxbredd om det behövs */
+        margin-left: 20px; /* Lägg till margin om du vill ha avstånd mellan .founder och .content */
+      }
+    }
+  }
+}
+
+/*// ABOUT
+.about {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+  padding: 40px 40px;
+  align-items: center;
+  // margin-left: -20px; flytta hela sektionen aningen åt vänster
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    border: 1px solid black;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .founder {
+    margin-top: 60px;
+
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+    text-align: center;
+    img {
+      width: 70%;
+
+      @media (min-width: 1200px) {
+        width: 150%;
+        padding: 40px 40px;
+      }
+      // .background-frame {
+      //     @media (min-width:1200px) {
+      //         background-color: aqua;
+      //         border: 1px solid black;
+      //       }
+      // }
+    }
+    p {
+      font-family: $font-family-DM;
+      display: inline-block;
+      background-color: #beebff;
+      width: 70%;
+      padding: 10px;
+
+      span {
+        color: #f94d1c;
+        font-weight: 700;
+      }
+
+      @media (min-width: 1200px) {
+        position: relative;
+        bottom: 187px;
+        left: -12px;
+        background-color: #beebff;
+        padding: 13px 11px;
+        width: 90%;
+      }
+    }
+  }
+  .content {
+    margin-left: 20px;
+    h2 {
+    }
+    h3 {
+    }
+    p {
+      //   max-width: 90%;
+    }
+    a {
+      i {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    }
+
+    .btn-video {
+      margin-left: 10px;
+      i {
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      align-self: flex-start;
+      padding: 40px 40px;
+      margin-left: 90px;
+    }
+  }
+}
+*/
