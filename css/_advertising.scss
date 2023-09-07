@@ -1,0 +1,23 @@
+//ADVERTISING
+.img-advertising {
+    display: flex;
+    justify-content: center;
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+            padding-top: 45px;
+            padding-bottom: 40px;
+            padding-right: 30px;
+            padding-left: 30px;
+         }
+
+         @media (min-width: 1200px) {
+            display: block;
+            padding-top: 98px;
+            padding-bottom: 30px;
+            padding-right: 50px;
+            padding-left: 50px;
+
+         }
+    }
