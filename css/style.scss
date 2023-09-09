@@ -6,6 +6,7 @@
 @import "./features";
 @import "./about";
 @import "./header";
+@import "./services";
 
 * {
   box-sizing: border-box; // tar med border i beräkning vid sättning av storlek (borderna tar alltså inte upp 2 px extra p detta sätt)
@@ -29,8 +30,16 @@ body {
   margin-top: 30px;
 }
 
+h2 {
+  color: $h2-text-color;
+  font-size: 18px;
+  font-family: $font-family-Inter;
+  // margin-bottom: 30px;
+  // margin-top: 30px;
+}
+
 h3 {
-  color: #191919;
+  color: $text-color-dark;
   font-family: $font-family-DM;
   font-size: 28px;
   font-weight: 700;
@@ -39,6 +48,12 @@ h3 {
   @media (min-width: 768px) {
     font-size: 45px;
   }
+}
+
+h4 {
+  font-family: $font-family-DM;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .btn-yellow {
@@ -100,4 +115,17 @@ h3 {
     border: 10 px solid $btn-yellow;
     color: $text-color-dark;
   }
+}
+
+.btn-circle {
+  background-color: $btn-transparent;
+  color: $text-color-dark;
+  border: 1px solid $btn-black;
+  border-radius: 50%;
+  padding: 11px 17px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  width: 50px; /* Ange den önskade bredden här */
+  height: 50px;
 }

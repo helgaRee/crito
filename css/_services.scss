@@ -1,0 +1,43 @@
+.services {
+    padding: 40px;
+    background-color: #F0EFE9;
+    .container{
+        text-align: center;
+        .head-lines{
+            h2{
+
+            }
+            h3{
+
+            }
+        }
+        .content{
+            display: grid;
+            
+            grid-row-gap: 30px;
+            .box{
+                background-color: #FFFFFF;
+                padding: 30px;
+                
+                h4{
+                    // border-top: 1px solid black;
+                }
+                p{
+
+                }
+                a{
+                    background-color: #191919;
+                    color: $text-color-light;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 26px 28px;
+                    i{
+                        font-size: 22px;
+                        // text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
