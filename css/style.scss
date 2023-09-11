@@ -7,6 +7,7 @@
 @import "./about";
 @import "./header";
 @import "./services";
+@import "./chooseUs";
 
 * {
   box-sizing: border-box; // tar med border i beräkning vid sättning av storlek (borderna tar alltså inte upp 2 px extra p detta sätt)
@@ -36,6 +37,7 @@ h2 {
   font-family: $font-family-Inter;
   // margin-bottom: 30px;
   // margin-top: 30px;
+  text-transform: capitalize;
 }
 
 h3 {
@@ -44,6 +46,7 @@ h3 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 30px;
+text-transform: capitalize;
 
   @media (min-width: 768px) {
     font-size: 45px;
@@ -54,6 +57,7 @@ h4 {
   font-family: $font-family-DM;
   font-weight: 700;
   font-size: 22px;
+  text-transform: capitalize;
 }
 
 .btn-yellow {
