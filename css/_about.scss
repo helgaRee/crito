@@ -1,42 +1,97 @@
 /* Grundläggande stil för mobila enheter (mindre än 1200px bredd) */
 .about {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  padding: 40px;
+  // display: flex;
+  // flex-direction: row;
+  // text-align: center;
+  // padding: 40px;
+  // gap: 200px;
 
   .container {
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
     align-items: center;
+    // gap: 30px;
 
     /* Stilar för skärmar med en bredd på 1200px eller mer */
     @media (min-width: 1200px) {
       flex-direction: row;
       align-items: flex-start;
-      justify-content: space-between;
+      // justify-content: space-between;
       text-align: left;
+      gap: 30px;
+    }
+
+    .content {
+      margin-bottom: 30px;
+      h2 {
+        @media (min-width: 1200px) {
+          margin-bottom: 50px;
+        }
+      }
+      h3 {
+        margin-bottom: 50px;
+        @media (min-width: 1200px) {
+          margin-bottom: 45px;
+        }
+      }
+
+      .p-last {
+        margin-bottom: 50px;
+        @media (min-width: 1200px) {
+          margin-bottom: 80px;
+          margin-top: 50px;
+        }
+      }
+
+      p {
+        padding: 20px;
+        @media (min-width: 1200px) {
+          padding: 10px;
+          // line-height: 2rem;
+        }
+      }
+      .btn-black {
+        i {
+          margin-left: 10px;
+        }
+        @media (min-width: 1200px) {
+          margin-right: 44px;
+        }
+      }
+
+      .btn-circle {
+        i {
+        }
+      }
+      @media (min-width: 1200px) {
+        margin-left: 95px;
+      }
     }
 
     .founder {
-      text-align: center;
+      // text-align: center;
       // flex: 1;
 
-      @media (min-width: 1200px) {
-        text-align: left;
-      }
-
       img {
-        width: 70%;
-        margin-top: 60px;
+        margin-top: 30px;
         text-align: center;
+        display: none;
+
+        @media (min-width: 768px) {
+          display: block;
+        }
 
         @media (min-width: 1200px) {
-          width: 100%;
-          margin-top: 30px;
+          // width:100%;
         }
       }
       .background-frame {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+        }
+
         @media (min-width: 1200px) {
         }
 
@@ -44,7 +99,7 @@
           font-family: $font-family-DM;
           display: inline-block;
           background-color: #beebff;
-          width: 70%;
+          width: 100%;
           padding: 10px;
 
           span {
@@ -54,147 +109,19 @@
 
           @media (min-width: 1200px) {
             position: relative;
-            bottom: 177px;
-            left: -49px;
+            bottom: 220px;
+            left: -60px;
             background-color: #beebff;
             width: 70%;
-            padding: 14px 23px;
+            padding: 40px 30px 40px 30px;
           }
         }
       }
-      .content {
-        margin-left: 20px; /* Lägg till marginal mellan .founder och .content */
 
-
-        p {
-          @media (min-width: 1200px) {
-            // margin-bottom: 70px;
-            margin-left: 49px;
-            width: 69%;
-            padding: 60px 114px;
-            line-height: 2rem;
-          }
-        }
-        .btn-black {
-          i {
-            margin-left: 10px;
-            @media (min-width: 1200px) {
-              margin-left: 10px;
-            }
-          }
-          @media (min-width: 1200px) {
-            margin-right: 35px;
-          }
-        }
-        
-        
-        .btn-circle {
-          margin-left: 20px;
-         
-          
-          i {
-            margin-left: 10px;
-          }
-
-          @media (min-width: 1200px) {
-          }
-
-        }
-
+      @media (min-width: 1200px) {
+        text-align: left;
+        margin-right: 95px;
       }
     }
   }
 }
-
-/*// ABOUT
-.about {
-  display: flex;
-  flex-direction: column-reverse;
-  text-align: center;
-  padding: 40px 40px;
-  align-items: center;
-  // margin-left: -20px; flytta hela sektionen aningen åt vänster
-
-  @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    border: 1px solid black;
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-
-  .founder {
-    margin-top: 60px;
-
-    @media (min-width: 1200px) {
-      text-align: left;
-    }
-    text-align: center;
-    img {
-      width: 70%;
-
-      @media (min-width: 1200px) {
-        width: 150%;
-        padding: 40px 40px;
-      }
-      // .background-frame {
-      //     @media (min-width:1200px) {
-      //         background-color: aqua;
-      //         border: 1px solid black;
-      //       }
-      // }
-    }
-    p {
-      font-family: $font-family-DM;
-      display: inline-block;
-      background-color: #beebff;
-      width: 70%;
-      padding: 10px;
-
-      span {
-        color: #f94d1c;
-        font-weight: 700;
-      }
-
-      @media (min-width: 1200px) {
-        position: relative;
-        bottom: 187px;
-        left: -12px;
-        background-color: #beebff;
-        padding: 13px 11px;
-        width: 90%;
-      }
-    }
-  }
-  .content {
-    margin-left: 20px;
-    h2 {
-    }
-    h3 {
-    }
-    p {
-      //   max-width: 90%;
-    }
-    a {
-      i {
-        margin-top: 10px;
-        margin-left: 10px;
-      }
-    }
-
-    .btn-video {
-      margin-left: 10px;
-      i {
-        margin: 0;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      align-self: flex-start;
-      padding: 40px 40px;
-      margin-left: 90px;
-    }
-  }
-}
-*/
