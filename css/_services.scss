@@ -22,6 +22,10 @@
         height: fit-content;
         background-color: #ffffff;
         padding: 30px;
+        &:hover {
+          background-color: #F9D783;
+          color: $text-color-dark;
+        }
 
         span {
           border-top: 1px solid black;
@@ -62,6 +66,12 @@
           align-items: center;
           justify-content: center;
           padding: 26px 28px;
+          &:hover {
+            background-color: #ffffff;
+            color: $text-color-dark;
+            border: none;
+          }
+         
 
           i {
             font-size: 22px;

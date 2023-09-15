@@ -8,10 +8,11 @@ header {
   padding: 15px;
 
   .container {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 78px;
+    display: contents;
 
     .menu-bars {
       font-size: 25px;
@@ -71,6 +72,9 @@ header {
         }
 
         .social-media {
+         a {
+          text-decoration: none;
+         }
           @media (min-width: 1200px) {
             display: flex;
           }
@@ -95,7 +99,7 @@ header {
         nav {
           a {
             display: inline-block;
-            text-decoration: none;
+            // text-decoration: none;
             color: $text-color-dark;
             margin-right: 35px;
             position: relative;

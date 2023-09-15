@@ -1,0 +1,34 @@
+.team{
+    .container{
+        .top{
+            h2{
+
+            }
+            h3{
+
+            }
+            a{
+
+            }
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            .box{
+         
+                img{
+                    max-width: 100%;         /* Begränsa bildens bredd till förälderelementets bredd */
+                    max-height: 100%;        /* Begränsa bildens höjd till förälderelementets höjd */
+                    width: auto;
+                    height: auto;  
+                    p{
+
+                    }
+                    .descr-txt{
+
+                    }
+                }
+            }
+        }
+    }
+}

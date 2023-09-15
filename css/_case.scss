@@ -1,0 +1,110 @@
+.case {
+    // padding: 100px;
+    .container {
+      display: flex;
+      flex-direction: column;
+        .headlines {
+          margin-top: 130px;
+            text-align: center;
+            h3{
+              margin-top: 40px;
+              margin-bottom: 100px;
+            }
+        }
+        .content-grid {
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            @media (min-width:1200px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                column-gap:30px;
+                row-gap: 50px;
+            }
+      
+          .box{
+            width: 70%;
+            margin: 0 auto;
+            // text-align: center;
+            border-bottom: 1px solid #E7E7E7;
+            margin-bottom: 60px;
+
+            img {
+              max-width: 100%;         /* Begränsa bildens bredd till förälderelementets bredd */
+              max-height: 100%;        /* Begränsa bildens höjd till förälderelementets höjd */
+              width: auto;
+              height: auto;             
+            }
+            @media (min-width:1200px) {
+              border-bottom: none;
+            }
+
+            }
+            h4 {
+                margin-top:70px;
+                margin-bottom: 30px;
+                text-align: left;
+                @media (min-width:1200px) {
+                  border-bottom: 1px solid #E7E7E7;
+                }
+              }
+              a {
+                  float: right;
+                  text-decoration: none;
+                  color: $text-color-dark;
+                //   font-family: $font-family-Inter;
+                font-size: 14px;
+                border: none;
+                margin-bottom: 20px;
+                
+
+                @media (min-width:1200px) {
+                  margin-bottom: 10px;
+                }
+                &:hover {
+                    border-radius: 25px;
+                    background-color: $btn-yellow;
+                    // text-decoration: underline;
+                    text-transform: uppercase;
+                }
+
+
+              }
+          } 
+
+
+          .box-1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+          }
+          .box-2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+          }
+          .box-3 {
+            grid-column: 2/2;
+            grid-row: 2/3;
+          }
+          .box-4 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+          }
+          .btn-black{
+            margin-bottom: 30px;
+            i {
+              margin-left: 10px;
+          }
+          }
+
+
+        }
+      }
+    
+  
+
+
+
+  
