@@ -1,0 +1,95 @@
+.testimonial {
+  background-color: #edcf86;
+  border-top: 1px solid #edcf86;
+  padding-block: 9rem;
+  .container {
+    padding-inline: 6rem;
+    background-color: #fff;
+    padding-block: 10rem;
+
+    .top-heading {
+      text-align: center;
+      margin-bottom: 5rem;
+
+      h2 {
+        margin-bottom: 45px;
+      }
+      h3 {
+      }
+    }
+    article {
+    //   display: flex;
+    //   flex-direction: column;
+      gap: 70px;
+      display: grid;
+      grid-template-columns: repeat(
+          auto-fill,
+          minmax(240px, 1fr)
+        );
+
+      .box {
+        // display: grid;
+        // grid-template-columns: repeat(
+        //     auto-fill,
+        //     minmax(200px, 1fr)
+        //   );
+        p{
+            line-height: 2rem;
+            margin-bottom: 50px;
+        }
+        .rating {
+            margin-bottom: 30px;
+          span {
+            color: #f94d1c;
+          }
+        }
+        .rater {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 20px;
+
+            @media (min-width: 992px) {
+                
+            }
+            @media (min-width: 1200px) {
+                // display: grid;
+                // grid-template-columns: auto 1fr auto;
+                // grid-template-rows: 1fr 1fr;
+                // column-gap: 20px;
+            }
+
+
+          img {
+            grid-column: 1/2;
+            grid-row: 1/3;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: "";
+          }
+          p {
+            margin-bottom: 0;
+          }
+          .name {
+            grid-column: 2/3;
+            grid-row: 1/1;
+            font-family: $font-family-Inter;
+            font-size: 22px;
+            font-weight: 700;
+
+          }
+
+          .descr-txt {
+            grid-column: 2/3;
+            grid-row: 2/2;
+            color: #F94D1C;
+          }
+        }
+      }
+    }
+    .center-content {
+        margin-top: 110px;
+    }
+  }
+}

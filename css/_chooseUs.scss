@@ -1,5 +1,6 @@
 .choose-us {
   .container {
+    z-index: 0;
     // margin-bottom: 15px;
     .main-img-container {
       position: relative;
@@ -12,31 +13,23 @@
 
         @media (min-width: 1200px) {
           display: block;
-          // margin: 0 auto;
           background-color: #F0EFE9;
-          // position: relative;
-          width: 220%;
-          top: 90px;
+          width: 290%;
+          top: 60px;
           left: 10px;
-          height: 250px;
-          margin-top: 120px;
+          height: 410px;
+          margin-top: 50px;
           margin-left: -20px;
+          z-index: -1;
         }
     }
       
 
       .main-img {
-        // width: 100%;
-        // height: auto;
-        // margin: 0 auto;
-        // position: absolute;
-        // top: 30px;
-        // left: 30px;
- 
         display: none;
 
         @media (min-width: 992px) {
-          // 
+
           width: 60%;
           margin: 0 auto;
           text-align: center;
@@ -46,9 +39,9 @@
         @media (min-width: 1200px) {
           display: block;
           position: absolute;
-          top: 30px;
-          left: 30px;
-          width: 160%;
+          top: -130px;
+          left: 70px;
+          width: 200%;
         }
       }
     }

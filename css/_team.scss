@@ -120,12 +120,12 @@
     }
   }
   .dots{
-    display: flex;
-    gap: 10px;
+    // display: flex;
+    // gap: 10px;
+        // justify-content: center;
+    // align-content: center;
     text-align: center;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 145px;
+    padding-bottom: 120px;
 
 
 
@@ -135,6 +135,7 @@
     background-color: #707070;
     border-radius: 50%;
     display: inline-block;
+    margin-right: 6px;
 
   }
   .dot-2{

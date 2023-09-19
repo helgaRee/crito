@@ -4,6 +4,7 @@
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
+  z-index: 0;
 
   .background-wavy-lines {
     position: absolute;
@@ -72,6 +73,7 @@
         }
       }
       button {
+        position: relative;
         border: none;
         z-index: 0;
 

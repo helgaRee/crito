@@ -11,6 +11,7 @@
 @import "./case";
 @import "./subscribe";
 @import "./team";
+@import "./testimonial";
 
 
 * {
@@ -156,7 +157,7 @@ h4 {
   font-weight: 600;
   font-size: 16px;
   i {
-    // margin-left: 7px;
+    margin-left: 7px;
     font-size: 0.9em;
   }
   &:hover {
