@@ -1,19 +1,28 @@
 // HEADER
 header {
   display: flex;
-  background-color: #f0efe9;
+  background-color: #F0EFE9;
   /* placera headern i mitten */
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
 
   .container {
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 78px;
-    display: contents;
+    // display: contents;
+    // border: 1px solid black;
 
+    @media (min-width: 2500px) {
+      max-width: 2048px;
+    }
+
+    a{
+      margin: 0 auto 0 10px;
+    }
+ 
     .menu-bars {
       font-size: 25px;
       border: none;
@@ -99,7 +108,7 @@ header {
         nav {
           a {
             display: inline-block;
-            // text-decoration: none;
+            text-decoration: none;
             color: $text-color-dark;
             margin-right: 35px;
             position: relative;
@@ -123,8 +132,20 @@ header {
           }
         }
       }
+  
+    }
+    .btn-login {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-right: 0;
+    }
+  }
+}
 
-      //___________________________________ nedan kan förmodligen tas bort om menyn fung enl sass-regler ovan
+
+
+
+    //___________________________________ nedan kan förmodligen tas bort om menyn fung enl sass-regler ovan
       // .main-menu>nav>a {
       //     display: inline-block;
       //     text-decoration: none;
@@ -151,11 +172,3 @@ header {
       // }
 
       //____________________________________________________
-    }
-
-    .btn-login {
-      padding-top: 12px;
-      padding-bottom: 12px;
-    }
-  }
-}

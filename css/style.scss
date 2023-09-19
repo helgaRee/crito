@@ -9,6 +9,9 @@
 @import "./services";
 @import "./chooseUs";
 @import "./case";
+@import "./subscribe";
+@import "./team";
+
 
 * {
   box-sizing: border-box; // tar med border i beräkning vid sättning av storlek (borderna tar alltså inte upp 2 px extra p detta sätt)
@@ -22,16 +25,50 @@ body {
   font-weight: 400;
   margin: 0;
   text-transform: capitalize;
+
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // grid-template-rows: auto 1fr auto;
+
+  // grid-template-areas: "header"
+  //                       "main"
+  //                       "searchbox"
+  //                       "footer";
   // background-color: #F0EFE9;
 }
-
-.heading-red {
-  color: #f94d1c;
-  font-size: 18px;
-  font-family: $font-family-Inter;
-  margin-bottom: 30px;
-  margin-top: 30px;
+footer {
+  background-color: $text-color-dark;
+  color: $text-color-light;
+  padding: 50px;
+  grid-area: footer;
 }
+main{
+  // background-color: #F0EFE9;
+  grid-area: main;
+}
+header{
+  grid-area: header;
+}
+
+.headlines{
+  h2{
+    color: #f94d1c;
+    font-size: 18px;
+    font-family: $font-family-Inter;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  // padding-top: 120px;
+  // padding-bottom: 90px;
+}
+
+// .heading-red {
+//   color: #f94d1c;
+//   font-size: 18px;
+//   font-family: $font-family-Inter;
+//   margin-bottom: 30px;
+//   margin-top: 30px;
+// }
 
 h2 {
   color: $h2-text-color;
@@ -61,16 +98,22 @@ h4 {
   font-size: 22px;
   // text-transform: capitalize;
 }
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .btn-yellow {
   background-color: $btn-yellow;
   color: $text-color-dark;
   border-color: 1px solid $btn-yellow;
   border-radius: 25px;
-  padding: 12px 25px;
+  padding: 15px 30px;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
+
   i {
     margin-left: 7px;
     font-size: 0.9em;

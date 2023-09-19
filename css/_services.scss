@@ -1,6 +1,14 @@
 .services {
   padding: 40px;
   background-color: #f0efe9;
+  position: relative;
+
+  .background-lines-righ {
+    position: absolute;
+    bottom: 0px;
+
+
+  }
 
   .container {
     display: flex;
