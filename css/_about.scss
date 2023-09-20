@@ -1,5 +1,7 @@
 /* Grundläggande stil för mobila enheter (mindre än 1200px bredd) */
 .about {
+  margin-top: 60px;
+
   // display: flex;
   // flex-direction: row;
   // text-align: center;
@@ -25,12 +27,14 @@
     .content {
       margin-bottom: 30px;
       h2 {
+        margin-bottom: 10px;
         @media (min-width: 1200px) {
           margin-bottom: 50px;
         }
       }
       h3 {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        margin-top: 30px;
         @media (min-width: 1200px) {
           margin-bottom: 45px;
         }
@@ -52,6 +56,8 @@
         }
       }
       .btn-black {
+        margin-right: 15px;
+
         i {
           margin-left: 10px;
         }

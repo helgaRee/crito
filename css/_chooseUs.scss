@@ -60,6 +60,9 @@
 
     .headlines {
       // grid-column: span 4;
+      margin-top:80px;
+      margin-bottom:60px;
+
       text-align: center;
       @media (min-width: 1200px) {
         text-align: left;
@@ -79,6 +82,11 @@
     }
 
     .box {
+      margin-bottom:20px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
       @media (min-width: 1200px) {
         display: grid;
         grid-template-columns: auto 1fr 1fr;
