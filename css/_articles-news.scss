@@ -132,7 +132,6 @@
             font-family: $font-family-DM;
             font-weight: 700;
             margin-bottom: 25px;
-            // max-width: 60%;
             text-align: center;
             @media (min-width: 768px) {
               text-align: left;
@@ -143,7 +142,6 @@
             font-size: 16px;
             color: #6a6c71;
             font-weight: 400;
-            // max-width: 90%;
             text-align: center;
             @media (min-width: 768px) {
               text-align: left;
@@ -154,12 +152,7 @@
     }
   }
   .dots{
-    // display: flex;
-    // gap: 10px;
-        // justify-content: center;
-    // align-content: center;
     text-align: center;
-    // padding-bottom: 120px;
     margin-top: 55px;
     margin-bottom: 100px;
 

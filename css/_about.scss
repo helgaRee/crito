@@ -97,22 +97,18 @@
         @media (min-width: 992px) {
           display: block;
         }
-
         @media (min-width: 1200px) {
         }
-
         p {
           font-family: $font-family-DM;
           display: inline-block;
           background-color: #beebff;
           width: 100%;
           padding: 10px;
-
           span {
             color: #f94d1c;
             font-weight: 700;
           }
-
           @media (min-width: 1200px) {
             position: relative;
             bottom: 220px;

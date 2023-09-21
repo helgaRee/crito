@@ -13,6 +13,7 @@
 @import "./team";
 @import "./testimonial";
 @import "./articles-news";
+@import "./footer";
 
 
 * {
@@ -38,12 +39,10 @@ body {
   //                       "footer";
   // background-color: #F0EFE9;
 }
-footer {
-  background-color: $text-color-dark;
-  color: $text-color-light;
-  padding: 50px;
-  grid-area: footer;
-}
+// footer {
+//   background-color: $text-color-dark;
+//   color: $text-color-light;
+// }
 main{
   // background-color: #F0EFE9;
   grid-area: main;
