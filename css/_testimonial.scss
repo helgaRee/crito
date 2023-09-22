@@ -3,9 +3,13 @@
   border-top: 1px solid #edcf86;
   padding-block: 9rem;
   .container {
-    padding-inline: 6rem;
     background-color: #fff;
     padding-block: 10rem;
+    
+    @media (min-width: 992px) {
+      padding-inline: 6rem;
+    }
+
 
     .top-heading {
       text-align: center;
@@ -105,7 +109,12 @@
       }
     }
     .center-content {
-      margin-top: 110px;
+      margin-top: 60px;
+      @media (min-width: 992px) {
+        margin-top: 110px;
+      }
+
+
     }
   }
 }

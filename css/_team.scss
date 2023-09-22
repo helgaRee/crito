@@ -20,7 +20,7 @@
 
       h2 {
         margin-top: 120px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         // text-align: center;
         @media (min-width: 992px) {
           text-align: left;
@@ -125,7 +125,10 @@
         // justify-content: center;
     // align-content: center;
     text-align: center;
+
+    @media (min-width: 992px) {
     padding-bottom: 120px;
+     }
 
   .dot {
     height: 15px;

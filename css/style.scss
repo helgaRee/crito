@@ -28,28 +28,8 @@ body {
   font-weight: 400;
   margin: 0;
   text-transform: capitalize;
+}
 
-  // display: grid;
-  // grid-template-columns: 1fr;
-  // grid-template-rows: auto 1fr auto;
-
-  // grid-template-areas: "header"
-  //                       "main"
-  //                       "searchbox"
-  //                       "footer";
-  // background-color: #F0EFE9;
-}
-// footer {
-//   background-color: $text-color-dark;
-//   color: $text-color-light;
-// }
-main{
-  // background-color: #F0EFE9;
-  grid-area: main;
-}
-header{
-  grid-area: header;
-}
 
 .headlines{
   h2{
@@ -59,8 +39,7 @@ header{
     margin-bottom: 30px;
     margin-top: 30px;
   }
-  // padding-top: 120px;
-  // padding-bottom: 90px;
+
 }
 
 // .heading-red {
@@ -75,9 +54,6 @@ h2 {
   color: $h2-text-color;
   font-size: 18px;
   font-family: $font-family-Inter;
-  // margin-bottom: 30px;
-  // margin-top: 30px;
-  // text-transform: capitalize;
 }
 
 h3 {
@@ -86,7 +62,6 @@ h3 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 30px;
-// text-transform: capitalize;
 
   @media (min-width: 768px) {
     font-size: 45px;
@@ -97,8 +72,8 @@ h4 {
   font-family: $font-family-DM;
   font-weight: 700;
   font-size: 22px;
-  // text-transform: capitalize;
 }
+
 .center-content{
   display: flex;
   justify-content: center;
@@ -119,9 +94,10 @@ h4 {
     margin-left: 7px;
     font-size: 0.9em;
   }
+    // vid hover, ändra bakgrundsfärg + textfärg samt öka padding
   &:hover {
     background-color: $btn-black;
-    border: 10px solid $btn-black;
+    border: 5px solid $btn-black;
     color: $text-color-light;
   }
 }
@@ -135,14 +111,15 @@ h4 {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  // border: 1px solid #191919;
+
   i {
     margin-left: 7px;
     font-size: 0.9em;
   }
+  // vid hover, ändra bakgrundsfärg + textfärg samt öka padding
   &:hover {
     background-color: $btn-black;
-    border: 10px solid $btn-black;
+    border: 5px solid $btn-black;
     color: $text-color-light;
   }
 }
@@ -160,9 +137,10 @@ h4 {
     margin-left: 7px;
     font-size: 0.9em;
   }
+  // Vid hover, ändra bakgrundsfärg + textfärg, samt öka padding
   &:hover {
     background-color: $btn-yellow;
-    border: 10px solid $btn-yellow;
+    border: 5px solid $btn-yellow;
     color: $text-color-dark;
   }
 }
@@ -176,11 +154,12 @@ h4 {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  width: 50px; /* Ange den önskade bredden här */
+  width: 50px;
   height: 50px;
+    // Vid hover, ändra bakgrundsfärg + textfärg, samt öka padding
     &:hover {
     background-color: $btn-black;
-    border: 10px solid $btn-black;
+    border: 5px solid $btn-black;
     color: $text-color-light;
   }
 }

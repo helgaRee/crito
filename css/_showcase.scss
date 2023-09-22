@@ -1,29 +1,33 @@
 // SHOWCASE
 .showcase {
     background-color: #F0EFE9;
-    position: relative;
+    position: relative; //anger position relative för positionering av bakgrundslinjer
     z-index: 0;
 
    .background-lines{
         position: absolute;
         bottom: -140px;
-        z-index: -1;
+        z-index: -1;  //placerar i rätt lager
         width: 100%;
     }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
         .content {
             padding-top: 40px;
             padding-bottom: 40px;
             text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+}
 
             @media (min-width: 1200px) {
                 text-align: left;
+                margin-bottom: 0;
+                margin-top: 0;
             }
-
-
             h1 {
                 font-family: $font-family-DM;
                 font-weight: 700;
@@ -37,7 +41,11 @@
                     font-size: 86px;
                 }
             }
-            h3 {    // ELLER P TAGG?
+            p{
+                margin-bottom: 55px;
+                width: 90%;
+            }
+            h3 {   
                 font-size: 18px;
                 padding-top: 40px;
                 padding-bottom: 40px;
@@ -51,8 +59,8 @@
             }
         }
             a {
-                margin-right: 40px;
-                margin-left: 40px;
+                // margin-right: 40px;
+                // margin-left: 40px;
                 display: block;
                 margin-bottom: 20px;
 
@@ -65,12 +73,8 @@
         img {
             margin-right: -50px;
             display: none;
-
             @media (min-width: 1200px) {
                 display: block;             
             }
-
-    
         }
-    }   
-}
+    }

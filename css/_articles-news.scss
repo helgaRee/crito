@@ -68,11 +68,17 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        .img-1 {
-          max-width: 100%;
-          max-height: 100%;
-          width: auto;
+
+        img{
+          width: 80%;
+          // max-height: 100%;
           height: auto;
+        }
+        .img-1 {
+          // max-width: 100%;
+ 
+          // width: auto;
+
         }
         .box-date {
           position: absolute;
@@ -114,6 +120,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+          max-width: 80%;
 
           h4 {
             font-family: $font-family-Inter;
