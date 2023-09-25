@@ -1647,9 +1647,11 @@ footer .bottom .social-media-footer a i {
 
 .showcase {
   position: relative;
+  z-index: -1;
 }
 .showcase .backround-lines {
   position: absolute;
+  z-index: 1;
 }
 .showcase .container .content {
   text-align: center;
@@ -1665,6 +1667,35 @@ footer .bottom .social-media-footer a i {
   font-size: 56px;
   font-weight: 700;
   color: #191919;
+}
+
+.contact-form {
+  background-color: #F0EFE9;
+  z-index: 1;
+}
+.contact-form h2 {
+  font-size: 45px;
+  color: #191919;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+  border-radius: 25px;
 }
 
 * {
