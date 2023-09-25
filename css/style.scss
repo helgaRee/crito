@@ -1,19 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700&family=Hanken+Grotesk:wght@200;300;400;500;600&display=swap");
 @import "./variables";
-@import "./showcase";
-@import "./advertising";
-@import "./features";
-@import "./about";
+@import "./index/showcase";
+@import "./index/advertising";
+@import "./index/features";
+@import "./index/about";
 @import "./header";
-@import "./services";
-@import "./chooseUs";
-@import "./case";
-@import "./subscribe";
-@import "./team";
-@import "./testimonial";
-@import "./articles-news";
+@import "./index/services";
+@import "./index/chooseUs";
+@import "./index/case";
+@import "./index/subscribe";
+@import "./index/team";
+@import "./index/testimonial";
+@import "./index/articles-news";
 @import "./footer";
+@import "./contacts/contacts";
 
 
 * {

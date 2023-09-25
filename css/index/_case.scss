@@ -6,8 +6,11 @@
       h3 {
         margin-top: 40px;
         @media (min-width: 768px) {
-        margin-bottom: 100px;
+        margin-bottom: 20px;
         }
+        @media (min-width: 1200px) {
+          margin-bottom: 100px;
+          }
       }
     }
     .content-grid {
@@ -39,7 +42,7 @@
 
         .btn-transparent {
           padding: 10px;
-          margin-bottom: 20%;
+          margin-bottom: 00%;
         }
       }
       h4 {
@@ -75,12 +78,6 @@
         &:hover {
           border-radius: 25px;
           background-color: $btn-yellow;
-          // text-decoration: underline;
-          text-transform: uppercase;
-        }
-
-        a:hover + h4 {
-          text-decoration: underline;
         }
       }
     }
@@ -95,4 +92,8 @@
       margin-bottom: 90px;
     }
   }
+}
+.case>.container>.content-grid .box:hover {
+  text-decoration: underline;
+  // text-transform: uppercase;
 }

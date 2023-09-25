@@ -1,0 +1,23 @@
+.showcase{
+    position: relative;
+    .backround-lines{
+        position: absolute;
+    }
+    .container{
+        .content{
+            text-align: center;
+            .small-h1{
+                font-family: $font-family-Inter;
+                font-size: 16px;
+                font-weight: 500;
+                color: #707070;
+            }
+            .large-p {
+                font-family: $font-family-DM;
+                font-size: 56px;
+                font-weight: 700;
+                color: #191919;
+            }
+        }
+    }
+}
