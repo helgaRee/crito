@@ -68,97 +68,149 @@
     <body>
         <section class="showcase contacts">
             <img class="background-lines bg-lines-contacts" src="images/background-lines.svg" alt="">
-            <div class="container">
+            <div class="container-contacts">
                 <div class="content">
                     <h1 class="small-h1">home contact</h1>
-                    <p class="large-p">let’s connect</p>
+                    <p class="large-p">let's connect</p>
                 </div>
+            </div>
+        </section>
+
+        <section class="contact-information">
+            <div class="container">
+
+                <a href="#">
+                    <div class="item item-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Visit us</h3>
+                        <p>sveavägen 31 111 34
+                            <span>stockholm</span>
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="item item-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Call us</h3>
+                        <p>+46 (8) 121 470 50
+                                                    +46 (8) 121 470 51
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="item item-3">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3>Email us</h3>
+                        <p>info@crito.com
+                                                    support@crito.com
+                        </p>
+                    </div>
+                </a>
             </div>
         </section>
 
         <section class="contact-form">
             <h2>Leave us a message for any information</h2>
             <form id="registerform" method="post" class="container mt-4">
-                <div class="mb-3">
-                    <label class="form-label" for="firstName">Förnamn</label>
+                <div
+                    class="mb-3">
+                    <!-- <label class="form-label" for="firstName">Förnamn</label> -->
                     <input class="form-input" type="text" id="firstName" name="firstName" title="Förnamn" placeholder="Name*" tabindex="1" class="p-2">
                 </div>
-                <div class="mb-3">
-                    <label class="form-label" for="email">Email</label>
+                <div
+                    class="mb-3">
+                    <!-- <label class="form-label" for="email">Email</label> -->
                     <input class="form-input" type="email" id="email" name="email" title="E-postadress" placeholder="Email*" tabindex="2" class="p-2">
                 </div>
-                <div class="mb-5">
-                    <label class="form-label" for="biography">Biografi</label>
+                <div
+                    class="mb-5">
+                    <!-- <label class="form-label" for="biography">Biografi</label> -->
                     <textarea class="form-input" name="biography" id="biography" placeholder="Your Message*"></textarea>
                 </div>
-                <div class="d-grid">
-                    <button class="btn btn-yellow" type="submit">Send Sessage<i class="arrow-top-right fa-regular fa-arrow-up-right"></i></button>
+                <div
+                    class="d-grid pb-5">
+                    <!--Använder Bootstrap för att skapa en padding-bottom-->
+                    <button class="btn btn-yellow" type="submit">Send Sessage<i class="arrow-top-right fa-regular fa-arrow-up-right"></i>
+                    </button>
                 </div>
             </form>
         </section>
-    </body>
 
-    <footer>
-        <div class="img-advertising-footer">
-            <img src="images/3.svg" alt="">
-            <img src="images/🖥-Landing-Pages.svg" alt="">
-            <img src="images/Page-2.svg" alt="">
-            <img src="images/Page-3.svg" alt="">
-            <img src="images/Page-1.svg" alt=""></div>
-        <div class="footer-top">
-            <img class="background-lines-right" src="images/background-lines-right.svg" alt="">
-            <div class="container">
-                <div class="box box-1">
-                    <img src="images/logotype-white.svg" alt="Logotype">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
-                </div>
+<img class="img-map" src="images/map.png" alt="Image of a map of Stockholm">
 
-                <div class="box box-2">
-                    <h4>company</h4>
-                    <a href="#">about</a>
-                    <a href="#">features</a>
-                    <a href="#">works</a>
-                    <a href="#">career</a>
-                </div>
-                <div class="box box-3">
-                    <h4>help</h4>
-                    <a href="#">customer support</a>
-                    <a href="#">delivery details</h3>
-                    <a href="#">terms & conditions</h3>
-                    <a href="#">privacy policy</h3>
-                </div>
-                <div class="box box-4">
-                    <h4>Resources</h4>
-                    <a href="#">Free eBooks</a>
-                    <a href="#">Development Tutorial</a>
-                    <a href="#">How to - Blog</a>
-                    <a href="#">Youtube Playlist</a>
-                </div>
-                <div class="box box-5">
-                    <h4>Link</h4>
-                    <a href="#">Free eBooks</a>
-                    <a href="#">Development Tutorial</a>
-                    <a href="#">How to - Blog</a>
-                    <a href="#">Youtube Playlist</a>
-                </div>
+
+
+<footer>
+    <div class="img-advertising-footer">
+        <img src="images/3.svg" alt="">
+        <img src="images/🖥-Landing-Pages.svg" alt="">
+        <img src="images/Page-2.svg" alt="">
+        <img src="images/Page-3.svg" alt="">
+        <img src="images/Page-1.svg" alt="">
+    </div>
+
+    <div class="footer-top">
+        <img class="background-lines-right" src="images/background-lines-right.svg" alt="">
+        <div class="container">
+            <div class="box box-1">
+                <img src="images/logotype-white.svg" alt="Logotype">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
             </div>
-        </div>
-        <div class="bottom">
-            <p class="footer-txt">&copy; 2023 crito - consulting company inc. all right reserved.</p>
-            <div class="social-media-footer">
-                <a href="https://facebook.com" target="_blank">
-                    <i class="social-media-icon fa-brands fa-facebook"></i>
-                </a>
-                <a href="#https://twitter.com/" target="_blank">
-                    <i class="social-media-icon fa-brands fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com/" target="_blank">
-                    <i class="social-media-icon fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://linkein.com/" target="_blank">
-                    <i class="social-media-icon fa-brands fa-linkedin"></i>
-                </a>
+            <div class="box box-2">
+                <h4>company</h4>
+                <a href="#">about</a>
+                <a href="#">features</a>
+                <a href="#">works</a>
+                <a href="#">career</a>
+            </div>
+            <div class="box box-3">
+                <h4>help</h4>
+                <a href="#">customer support</a>
+                <a href="#">delivery details</a>
+                <a href="#">terms & conditions</a>
+                <a href="#">privacy policy</a>
+            </div>
+            <div class="box box-4">
+                <h4>Resources</h4>
+                <a href="#">Free eBooks</a>
+                <a href="#">Development Tutorial</a>
+                <a href="#">How to - Blog</a>
+                <a href="#">Youtube Playlist</a>
+            </div>
+            <div class="box box-5">
+                <h4>Link</h4>
+                <a href="#">Free eBooks</a>
+                <a href="#">Development Tutorial</a>
+                <a href="#">How to - Blog</a>
+                <a href="#">Youtube Playlist</a>
             </div>
         </div>
     </div>
-</html></footer></html>
+
+    <div class="bottom">
+        <p class="footer-txt">&copy; 2023 crito - consulting company inc. all right reserved.</p>
+        <div class="social-media-footer">
+            <a href="https://facebook.com" target="_blank">
+                <i class="social-media-icon fa-brands fa-facebook"></i>
+            </a>
+            <a href="#https://twitter.com/" target="_blank">
+                <i class="social-media-icon fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <i class="social-media-icon fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://linkein.com/" target="_blank">
+                <i class="social-media-icon fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!-- <script src="scripts/script.js"></script>  -->
+    </body>
+
+    
+
+</html>

@@ -40,6 +40,9 @@
         align-items: center;
         margin: 0 auto;
         margin-bottom: 60px;
+        &:hover{
+          transform: scale(1.1);
+        }
 
         @media (min-width: 992px) {
           display: flex;

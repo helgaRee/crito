@@ -2,7 +2,7 @@
 .showcase {
     background-color: #F0EFE9;
     position: relative; //anger position relative för positionering av bakgrundslinjer
-    z-index: 0;
+    z-index: 1;
 
    .background-lines{
         position: absolute;
@@ -21,7 +21,7 @@
             text-align: center;
             margin-bottom: 30px;
             margin-top: 20px;
-}
+        }
 
             @media (min-width: 1200px) {
                 text-align: left;
@@ -59,10 +59,12 @@
             }
         }
             a {
-                // margin-right: 40px;
-                // margin-left: 40px;
                 display: block;
                 margin-bottom: 20px;
+                z-index:1;
+                &:hover{
+                    transform: scale(1.1);
+                  }
 
                 @media (min-width: 768px) {
                     display: inline-block;
@@ -70,13 +72,15 @@
                 }
             }
         }
-        img {
+        .img-showcase{
             margin-right: -50px;
             display: none;
+            
             @media (min-width: 1200px) {
                 display: block;             
             }
         }
+        .background-lines {}
     }
 
 

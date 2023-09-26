@@ -46,6 +46,9 @@
         margin: 0 auto;
         margin-bottom: 60px;
 
+        &:hover{
+          transform: scale(1.1);
+        }
 
         @media (min-width: 992px) {
           display: flex;
@@ -120,10 +123,6 @@
     }
   }
   .dots{
-    // display: flex;
-    // gap: 10px;
-        // justify-content: center;
-    // align-content: center;
     text-align: center;
 
     @media (min-width: 992px) {
@@ -141,8 +140,6 @@
   }
   .dot-active{
     background-color: #191919;
-
-
   }
 }
 }
