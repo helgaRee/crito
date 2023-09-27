@@ -3,43 +3,41 @@
     .top-heading {
       display: flex;
       flex-direction: column;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       text-align: center;
       @media (min-width: 992px) {
         text-align: left;
         margin-bottom: 40px;
       }
 
-      @media (min-width: 1200px) {
-      }
-
       h2 {
-        margin-top: 120px;
-        margin-bottom: 20px;
-        // text-align: center;
-        @media (min-width: 992px) {
-          text-align: left;
-        }
+        margin-top: 70px;
+        margin-bottom: 30px;
       }
       .top-row {
         display: flex;
         flex-direction: column;
 
         @media (min-width: 992px) {
-          display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-content: center;
+          align-items: baseline;
         }
       }
       h3 {
+        padding-bottom: 0;
+        padding-top: 0;
+        @media (min-width: 992px) {
+          margin-bottom: 0;
+        }
       }
       a {
-        // display: block;
+        display: block;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
-        margin-bottom: 60px;
+        align-self: center;
+
         &:hover{
           transform: scale(1.1);
         }
@@ -47,25 +45,22 @@
         @media (min-width: 992px) {
           display: flex;
           justify-content: flex-end;
-          margin-left: 50px;
           padding-right: 40px;
           padding-left: 40px;
-        }
-        @media (min-width: 1200px) {
-          margin-left: 230px;
-        }
-        @media (min-width: 1400px) {
-          margin-left: 410px;
         }
       }
     }
     .articles {
-      // display: flex;
-      // flex-direction: row;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
       gap: 20px;
       text-align: center;
+
+      a{
+        // &:hover{
+        //  transform: scale(1.1);
+        // }
+
 
       article {
         position: relative;
@@ -74,24 +69,23 @@
 
 
         img{
-          width: 80%;
-          // max-height: 100%;
-          margin: 0 auto;
           height: auto;
+          &:hover{
+            opacity: 0.8;
+            transition: 0.5s;
+          }
+          @media (min-width:992px) {
+            // margin: 0 auto;
+          }
         }
-        .img-1 {
-          // max-width: 100%;
 
-          // width: auto;
-
-        }
         .box-date {
           position: absolute;
           display: flex;
           align-items: center;
           justify-content: center;
-          top: 16px;
-          left: 38px;
+          top: 20px;
+          left: 28px;
           text-align: center;
           background-color: #f9d783;
           width: 56px;
@@ -116,8 +110,12 @@
           font-size: 16px;
 
           @media (min-width: 768px) {
-            top: 16px;
-            left: 50px;
+            top: 11px;
+            left: 10px;
+          }
+          @media (min-width: 1200px) {
+            top: 12px;
+            left: 13px;
           }
         }
 
@@ -127,6 +125,14 @@
           align-items: center;
           max-width: 80%;
           margin: 0 auto;
+
+          &:hover h4, &:hover h5{
+            text-decoration: underline;
+          }
+          @media (min-width: 768px) {
+            margin-left: 0;
+
+          }
 
           h4 {
             font-family: $font-family-Inter;
@@ -161,6 +167,7 @@
             }
           }
         }
+      }
       }
     }
   }

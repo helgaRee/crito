@@ -5,29 +5,36 @@
     z-index: 1;
 
    .background-lines{
+    display: none;
         position: absolute;
         bottom: -140px;
         z-index: -1;  //placerar i rätt lager
         width: 100%;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
     }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         
-        .content {
+        .content-left {
             padding-top: 40px;
             padding-bottom: 40px;
             text-align: center;
             margin-bottom: 30px;
             margin-top: 20px;
-        }
 
             @media (min-width: 1200px) {
                 text-align: left;
                 margin-bottom: 0;
                 margin-top: 0;
+                text-align: left;
             }
+
             h1 {
                 font-family: $font-family-DM;
                 font-weight: 700;
@@ -45,20 +52,8 @@
                 margin-bottom: 55px;
                 width: 90%;
             }
-            h3 {   
-                font-size: 18px;
-                padding-top: 40px;
-                padding-bottom: 40px;
-                padding-left: 10px;
-                padding-right: 10px;
 
-                @media (min-width: 768px) {
-                    font-size: 20px;
-                    padding-left: 0;
-                    padding-right: 0;
-            }
-        }
-            a {
+            .btn-yellow, .btn-transparent {
                 display: block;
                 margin-bottom: 20px;
                 z-index:1;
@@ -80,7 +75,20 @@
                 display: block;             
             }
         }
-        .background-lines {}
+    }
     }
 
+    // Vad gör den här?
+    h3 {   
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
 
+        @media (min-width: 768px) {
+            font-size: 20px;
+            padding-left: 0;
+            padding-right: 0;
+    }
+}

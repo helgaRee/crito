@@ -48,7 +48,7 @@
       }
       input {
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         color: $text-color-dark;
@@ -61,7 +61,8 @@
 
         @media (min-width: 992px) {
           margin-right: 20px;
-          margin-bottom: 0;
+          // margin-bottom: 0;
+          margin-bottom: 10px;
         }
       }
       .btn-yellow-scale {

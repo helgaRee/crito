@@ -2,8 +2,9 @@
     padding-block: 130px;
   }
 
-.showcase {
+.showcase-contacts {
   position: relative;
+  background-color: #F0EFE9;
   z-index: -1;
 
   .backround-lines {
@@ -125,7 +126,11 @@
       font-weight: 700;
       text-transform: none;
       text-align: center;
-      width: 50%;
+    
+
+      @media (min-width: 768px) {
+        width: 50%;
+      }
 
     }
   

@@ -1,16 +1,32 @@
 .case {
   .container {
     .headlines {
-      margin-top: 130px;
+      margin-top: 90px;
       text-align: center;
-      h3 {
-        margin-top: 40px;
+
+      @media (min-width: 1200px) {
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
+        margin-bottom: 0;
+        margin-top: 20px;
         @media (min-width: 768px) {
-        margin-bottom: 20px;
+          margin-bottom: 17px;
+        }
+      }
+      h3 {
+        // margin-top: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        @media (min-width: 768px) {
+          // margin-bottom: 20px;
         }
         @media (min-width: 1200px) {
-          margin-bottom: 100px;
-          }
+          margin: 0 0 30px 0;
+          padding: 0;
+        }
       }
     }
     .content-grid {
@@ -31,6 +47,9 @@
         margin: 0 auto;
         border-bottom: 1px solid #e7e7e7;
         margin-top: 60px;
+        @media (min-width: 1200px) {
+          margin-top: 40px;
+        }
 
         img {
           width: 100%;
@@ -57,6 +76,10 @@
         }
         @media (min-width: 1200px) {
           border-bottom: 1px solid #e7e7e7;
+          margin-top: 5px;
+          padding-bottom: 0;
+          margin-bottom: 14px;
+          align-self: flex-start;
         }
       }
       a {
@@ -83,7 +106,7 @@
       }
     }
     .btn-black {
-      margin-bottom: 30px;
+      margin-block: 20px;
       i {
         margin-left: 10px;
       }
@@ -94,7 +117,7 @@
     }
   }
 }
-.case>.container>.content-grid .box:hover {
+.case > .container > .content-grid .box:hover {
   text-decoration: underline;
   // text-transform: uppercase;
 }

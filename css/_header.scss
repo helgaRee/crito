@@ -18,7 +18,7 @@ header {
     }
 
     .logotype {
-      // margin: 0 auto 0 10px;
+      align-self: center;
     }
  
     .menu-bars {
@@ -52,7 +52,7 @@ header {
 // Tar bort kontakt-information upp till 1200px skärmstorlek
         .contact-information {
           display: none;
-          padding: 10px;
+          padding-block: 10px;
           width: 100%;
 
 // Visar kontaktinformation

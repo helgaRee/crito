@@ -1,24 +1,25 @@
 .testimonial {
   background-color: #edcf86;
   border-top: 1px solid #edcf86;
-  padding-block: 9rem;
+  padding-bottom: 7rem;
+  padding-top: 4rem;
   .container {
     background-color: #fff;
-    padding-block: 10rem;
-    
+    padding-bottom: 7rem;
+
     @media (min-width: 992px) {
       padding-inline: 6rem;
     }
-
 
     .top-heading {
       text-align: center;
       margin-bottom: 5rem;
 
       h2 {
-        margin-bottom: 45px;
+        margin-top: 70px;
       }
       h3 {
+        padding-bottom: 0;
       }
     }
     article {
@@ -27,12 +28,16 @@
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       justify-content: center;
       text-align: center;
+      @media (min-width: 992px) {
+        text-align: left;
+        // margin-bottom: 100px;
+      }
 
       .box {
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         p {
           line-height: 2rem;
-          margin-bottom: 50px;
+          margin-bottom: 30px;
         }
         .rating {
           margin-bottom: 30px;
@@ -102,19 +107,12 @@
           }
         }
       }
-      @media (min-width: 992px) {
-        text-align: left;
-        margin-bottom: 100px;
-
-      }
     }
     .center-content {
       margin-top: 60px;
       @media (min-width: 992px) {
-        margin-top: 110px;
+        margin-top: 100px;
       }
-
-
     }
   }
 }
