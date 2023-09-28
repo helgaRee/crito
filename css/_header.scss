@@ -6,6 +6,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   padding: 15px;
+  position: relative;
+  z-index: 2;
 // Placerar hela innehållet i headern i en flex
   .container {
     display: flex;
@@ -67,6 +69,14 @@ header {
             font-family: $font-family-Inter;
             font-size: 15px;
             font-weight: 300;
+            a{
+              text-decoration: none;
+              color: $text-color-dark;
+
+              &:hover{
+                text-decoration: underline;
+              }
+            }
 
             i {
               margin-right: 5px;
