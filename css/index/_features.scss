@@ -1,131 +1,112 @@
 //FEATURES
 .features {
   padding: 20px;
-
   @media (min-width: 1200px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   /* Add a separate container for the border */
-.border-container {
-border: none;
-
-
-  @media (min-width: 1200px) {
-    border: 1px solid #E7E7E7;
-    padding-inline-end: 180px;
-    padding-inline-start: 90px;
-  }
-
-  .container {
+  .border-container {
+    border: none;
     @media (min-width: 1200px) {
-      display: flex;
-      margin: 0 auto;
-      column-gap: 80px;
-      padding-block: 80px;
+      border: 1px solid #e7e7e7;
+      padding-inline-end: 180px;
+      padding-inline-start: 90px;
     }
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      text-align: center;
-      align-items: center;
-      // margin-bottom: 60px;
-      margin-block: 30px;
-
+    .container {
       @media (min-width: 1200px) {
-        text-align: left;
-        line-height: 1.2;
-        align-items: flex-start;
-        margin-bottom: 0;
-        margin-right: 60px;
+        display: flex;
+        margin: 0 auto;
+        column-gap: 80px;
+        padding-block: 80px;
       }
-    }
-
-    h2 {
-      color: $h2-text-color;
-      font-size: 18px;
-      font-family: $font-family-Inter;
-      // margin-bottom: 30px;
-      // margin-top: 30px;
-    }
-    h3 {
-      color: $text-color-dark;
-      font-family: $font-family-DM;
-      font-size: 28px;
-      font-weight: 700;
-      padding-block: 20px;
-      // margin-bottom: 30px;
-      margin-bottom: 0;
-      z-index: 0;
-
-      @media (min-width: 768px) {
-        font-size: 45px;
-      }
-    }
-    .btn-features {
-      display: block;
-      margin: 15px 40px 20px 40px;
-
-      @media (min-width: 768px) {
-        display: inline-block; 
-      }
-
-      @media (min-width: 1200px) {
-        display: block; // Gör länken till en blocknivå-element 
-        width: 100%; // Ta upp hela bredden av föräldern 
-        // margin: 0; 
-        padding-block: 20px;
-        text-align: center; 
-        margin: 15px 0px 0px 0px;
-      }
-    }
-// Placerar features-consulting i en grid i 2 col och 2 rader
-    .features-consulting {
-      @media (min-width: 768px) {
-        display: grid;
-        // grid-template-columns: 60% 60%;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
-        gap: 10px;
-        column-gap: 50px;
-      }
-      .box {
+      .content {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
         align-items: center;
-
-        img {
-          margin-bottom: 20px;
-          margin-top: 20px;
-          width: 20%;
-          color: #191919;
-        }
-        h3 {
-          font-family: $font-family-DM;
-          font-size: 22px;
-          font-weight: 700;
-        }
-        p {
-          padding: 10px 10px;
-          text-align: center;
-          font-family: $font-family-Inter;
-          font-size: 16px;
-          color: #707070;
-
-          @media (min-width: 1200px) {
-            text-align: left;
-            padding: 0;
-          }
-        }
-
+        margin-block: 30px;
         @media (min-width: 1200px) {
+          text-align: left;
+          line-height: 1.2;
           align-items: flex-start;
+          margin-bottom: 0;
+          margin-right: 60px;
+        }
+      }
+      h2 {
+        color: $h2-text-color;
+        font-size: 18px;
+        font-family: $font-family-Inter;
+      }
+      h3 {
+        color: $text-color-dark;
+        font-family: $font-family-DM;
+        font-size: 28px;
+        font-weight: 700;
+        padding-block: 20px;
+        margin-bottom: 0;
+        z-index: 0;
+        @media (min-width: 768px) {
+          font-size: 45px;
+        }
+      }
+      .btn-features {
+        display: block;
+        margin: 15px 40px 20px 40px;
+        @media (min-width: 768px) {
+          display: inline-block;
+        }
+        @media (min-width: 1200px) {
+          display: block; // Gör länken till en blocknivå-element
+          width: 100%; // Ta upp hela bredden av föräldern
+          padding-block: 20px;
+          text-align: center;
+          margin: 15px 0px 0px 0px;
+        }
+      }
+      // Placerar features-consulting i en grid i 2 col och 2 rader
+      .features-consulting {
+        @media (min-width: 768px) {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 50% 50%;
+          gap: 10px;
+          column-gap: 50px;
+        }
+        .box {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 20%;
+            color: #191919;
+          }
+          h3 {
+            font-family: $font-family-DM;
+            font-size: 22px;
+            font-weight: 700;
+          }
+          p {
+            padding: 10px 10px;
+            text-align: center;
+            font-family: $font-family-Inter;
+            font-size: 16px;
+            color: #707070;
+            @media (min-width: 1200px) {
+              text-align: left;
+              padding: 0;
+            }
+          }
+          @media (min-width: 1200px) {
+            align-items: flex-start;
+          }
         }
       }
     }
   }
-}
 }

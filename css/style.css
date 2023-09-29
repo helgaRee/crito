@@ -248,6 +248,7 @@ h3 {
     margin-block: 55px;
   }
 }
+
 .features {
   padding: 20px;
   /* Add a separate container for the border */
@@ -495,9 +496,19 @@ h3 {
     padding: 20px;
   }
 }
+.about .container .founder {
+  position: relative;
+}
+.about .container .founder .wavy-lines-left {
+  position: absolute;
+  left: -34px;
+  top: 36px;
+  z-index: 1;
+}
 .about .container .founder img {
   text-align: center;
   display: none;
+  z-index: 0;
 }
 @media (min-width: 992px) {
   .about .container .founder img {
@@ -506,6 +517,7 @@ h3 {
 }
 .about .container .founder .background-frame {
   display: none;
+  z-index: 1;
 }
 @media (min-width: 992px) {
   .about .container .founder .background-frame {
@@ -599,7 +611,6 @@ h3 {
 }
 .services .container .content .box:hover {
   background-color: #f9d783;
-  color: #191919;
 }
 @media (min-width: 768px) {
   .services .container .content .box {
@@ -654,6 +665,8 @@ h3 {
   padding: 26px 28px;
 }
 .services .container .content .box a:hover {
+  background-color: #ffffff;
+  color: #191919;
   border: none;
 }
 @media (min-width: 768px) {
@@ -939,7 +952,7 @@ h3 {
 }
 
 .case > .container > .content-grid .box:hover {
-  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .subscribe {
@@ -1106,7 +1119,7 @@ h3 {
 }
 .team .container .content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Använd auto-fill för automatisk fyllning */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 35px;
   text-align: center;
   margin-top: 40px;
@@ -1162,6 +1175,9 @@ h3 {
   border-radius: 50%;
   display: inline-block;
   margin-right: 6px;
+}
+.team .dots .dot:hover {
+  color: #191919;
 }
 .team .dots .dot-active {
   background-color: #191919;
@@ -1462,6 +1478,9 @@ h3 {
   border-radius: 50%;
   display: inline-block;
   margin-right: 6px;
+}
+.articles-news .dots .dot:hover {
+  color: #191919;
 }
 .articles-news .dots .dot-active {
   background-color: #191919;
@@ -2031,7 +2050,7 @@ h4 {
 .btn-yellow:hover {
   background-color: #191919;
   transition: 0.5s;
-  transform: scale(0.8);
+  transform: scale(1.1);
   color: #F0EFE9;
 }
 
@@ -2100,3 +2119,4 @@ h4 {
   transform: scale(1.1);
   color: #F0EFE9;
 }
+

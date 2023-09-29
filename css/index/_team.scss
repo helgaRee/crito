@@ -2,27 +2,22 @@
   background-color: #edcf86;
   .container {
     text-align: center;
-
     @media (min-width: 992px) {
     }
     .top-heading {
       display: flex;
       flex-direction: column;
       margin-bottom: 50px;
-      // text-align: center;
       @media (min-width: 992px) {
         text-align: left;
         margin-bottom: 40px;
       }
-
       @media (min-width: 1200px) {
         margin-bottom: 90px;
       }
-
       h2 {
         margin-top: 70px;
         margin-bottom: 30px;
-        // text-align: center;
         @media (min-width: 992px) {
           text-align: left;
           margin-top: 120px;
@@ -31,7 +26,6 @@
       .top-row {
         display: flex;
         flex-direction: column;
-
         @media (min-width: 992px) {
           flex-direction: row;
           justify-content: space-between;
@@ -40,7 +34,6 @@
         }
       }
       h3 {
-        // margin-bottom: 0;
         padding-bottom: 0;
         padding-top: 0;
         @media (min-width: 992px) {
@@ -52,13 +45,9 @@
         justify-content: center;
         align-items: center;
         align-self: center;
-        // margin: 0 auto;
-        // margin: 0 0 0 auto; 
-        // margin-bottom: 60px; 
-        &:hover{
+        &:hover {
           transform: scale(1.1);
         }
-
         @media (min-width: 992px) {
           display: flex;
           justify-content: flex-end;
@@ -67,19 +56,16 @@
           padding-left: 40px;
         }
         @media (min-width: 1200px) {
-            margin-left: 360px;
+          margin-left: 360px;
         }
         @media (min-width: 1400px) {
-            margin-left: 530px;
+          margin-left: 530px;
         }
       }
     }
     .content {
       display: grid;
-      grid-template-columns: repeat(
-        auto-fill,
-        minmax(240px, 1fr)
-      ); /* Använd auto-fill för automatisk fyllning */
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       grid-gap: 35px;
       text-align: center;
       margin-top: 40px;
@@ -87,13 +73,6 @@
       align-content: center;
       text-align: center;
       margin: 0 auto;
-      // display: grid;
-      // grid-template-columns: 1fr 1fr 1fr 1fr;
-
-      @media (min-width: 992px) {
-        // grid-template-columns: repeat(4, 1fr);
-      }
-
       .box {
         display: flex;
         flex-direction: column;
@@ -101,8 +80,8 @@
         text-align: center;
         max-width: 100%;
         @media (min-width: 992px) {
-            align-items: flex-start;
-           }
+          align-items: flex-start;
+        }
         img {
           max-width: 100%;
           max-height: 100%;
@@ -110,45 +89,40 @@
           height: auto;
           margin-bottom: 30px;
         }
-          p {
-            font-family: $font-family-DM;
-            font-weight: 700;
-            font-size: 1.38rem;
-            @media (min-width: 992px) {
-               text-align: left;
-              }
-            
+        p {
+          font-family: $font-family-DM;
+          font-weight: 700;
+          font-size: 1.38rem;
+          @media (min-width: 992px) {
+            text-align: left;
           }
-          .descr-txt {
-            font-family: $font-family-Inter;
-            font-size: 1em;
-            font-weight: 400;
-            color: #595039;
-            margin-top: -10px;
-            margin-bottom: 56px;
-          }
-        
+        }
+        .descr-txt {
+          font-family: $font-family-Inter;
+          font-size: 1em;
+          font-weight: 400;
+          color: #595039;
+          margin-top: -10px;
+          margin-bottom: 56px;
+        }
       }
     }
   }
-  .dots{
+  .dots {
     text-align: center;
-
-    @media (min-width: 992px) {
-    // padding-bottom: 120px;
-     }
-
-  .dot {
-    height: 15px;
-    width: 15px;
-    background-color: #707070;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 6px;
-
+    .dot {
+      height: 15px;
+      width: 15px;
+      background-color: #707070;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 6px;
+      &:hover {
+        color: $text-color-dark;
+      }
+    }
+    .dot-active {
+      background-color: #191919;
+    }
   }
-  .dot-active{
-    background-color: #191919;
-  }
-}
 }

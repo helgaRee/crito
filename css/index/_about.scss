@@ -84,7 +84,6 @@
         text-align: center;
         align-items: baseline;
         justify-content: center;
-
         @media (min-width: 1200px) {
           display: flex;
           text-align: left;
@@ -125,26 +124,25 @@
         }
       }
     }
-
     .founder {
-      // text-align: center;
-      // flex: 1;
-
+      position: relative;
+      .wavy-lines-left {
+        position: absolute;
+        left: -34px;
+        top: 36px;
+        z-index: 1;
+      }
       img {
-        // margin-top: 30px;
         text-align: center;
         display: none;
-
+        z-index: 0;
         @media (min-width: 992px) {
           display: block;
-        }
-
-        @media (min-width: 1200px) {
-          // width:100%;
         }
       }
       .background-frame {
         display: none;
+        z-index: 1;
         @media (min-width: 992px) {
           display: block;
         }
@@ -153,7 +151,6 @@
         p {
           font-family: $font-family-DM;
           display: inline-block;
-          
           background-color: #beebff;
           width: 100%;
           padding: 10px;
@@ -171,7 +168,6 @@
           }
         }
       }
-
       @media (min-width: 1200px) {
         text-align: left;
         margin-right: 95px;

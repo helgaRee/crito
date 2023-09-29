@@ -9,7 +9,6 @@
         text-align: left;
         margin-bottom: 40px;
       }
-
       h2 {
         margin-top: 70px;
         margin-bottom: 30px;
@@ -17,7 +16,6 @@
       .top-row {
         display: flex;
         flex-direction: column;
-
         @media (min-width: 992px) {
           flex-direction: row;
           justify-content: space-between;
@@ -37,11 +35,9 @@
         justify-content: center;
         align-items: center;
         align-self: center;
-
         &:hover{
           transform: scale(1.1);
         }
-
         @media (min-width: 992px) {
           display: flex;
           justify-content: flex-end;
@@ -55,19 +51,11 @@
       grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
       gap: 20px;
       text-align: center;
-
       a{
-        // &:hover{
-        //  transform: scale(1.1);
-        // }
-
-
       article {
         position: relative;
         display: flex;
         flex-direction: column;
-
-
         img{
           height: auto;
           &:hover{
@@ -75,10 +63,8 @@
             transition: 0.5s;
           }
           @media (min-width:992px) {
-            // margin: 0 auto;
           }
         }
-
         .box-date {
           position: absolute;
           display: flex;
@@ -97,7 +83,6 @@
             align-content: center;
             margin-bottom: 0;
             text-align: center;
-
             span {
               font-family: $font-family-DM;
               font-size: 22px;
@@ -108,7 +93,6 @@
           font-family: $font-family-Inter;
           font-weight: 400;
           font-size: 16px;
-
           @media (min-width: 768px) {
             top: 11px;
             left: 10px;
@@ -118,22 +102,18 @@
             left: 13px;
           }
         }
-
         .content {
           display: flex;
           flex-direction: column;
           align-items: center;
           max-width: 80%;
           margin: 0 auto;
-
           &:hover h4, &:hover h5{
             text-decoration: underline;
           }
           @media (min-width: 768px) {
             margin-left: 0;
-
           }
-
           h4 {
             font-family: $font-family-Inter;
             font-size: 16px;
@@ -175,9 +155,6 @@
     text-align: center;
     margin-top: 55px;
     margin-bottom: 100px;
-
-
-
   .dot {
     height: 15px;
     width: 15px;
@@ -185,7 +162,9 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 6px;
-
+    &:hover{
+      color: $text-color-dark;
+    }
   }
   .dot-active{
     background-color: #191919;
