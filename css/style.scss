@@ -39,6 +39,9 @@ body {
     margin-top: 30px;
   }
 }
+.heading-red{
+  margin-bottom: 40px;
+}
 h2 {
   color: $h2-text-color;
   font-size: 18px;
@@ -53,6 +56,7 @@ h3 {
 
   @media (min-width: 768px) {
     font-size: 45px;
+    margin-bottom: 40px;
   }
 }
 h4 {
@@ -157,17 +161,41 @@ h4 {
 /*Style for next and previous-buttons*/
 .next-page{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* justify-content: space-around; */
   gap: 10px;
+  margin-block: 95px 85px;
    .previous{
-     list-style-type: none;
+     border: 1px solid rgba(204, 204, 204, 0.488);
+     border-radius: 5px;
+     height: 39px;
+     width: 36px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .page-number-one{
+    background-color: #191919;
+    color: #f0efe9;
    }
    .page-number{
-    color:aqua;
+    border: 1px solid rgba(204, 204, 204, 0.488);
+    border-radius: 5px;
+
+    height: 39px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    }
    .next{
-     color: rgb(217, 17, 17);
+    border: 1px solid rgba(204, 204, 204, 0.488);
+    border-radius: 5px;
+    height: 39px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
    }
  }

@@ -3,15 +3,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* justify-content: space-around; */
+
   gap: 10px;
-   .previous{
-     list-style-type: none;
-   }
-   .page-number{
-    color:aqua;
-   }
-   .next{
-     color: rgb(217, 17, 17);
-   }
  }
+
+ .previous{
+  list-style-type: none;
+}
+.page-number{
+ color:aqua;
+}
+.next{
+  color: rgb(217, 17, 17);
+}
