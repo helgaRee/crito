@@ -1,8 +1,10 @@
-Du ska i denna inlämningsuppgift bygga upp två sidor för ett företag som heter Crito. Designfilen som ska använda i denna inlämningsuppgift hittar du under kurstillbehör och heter crito - designmall.zip i den zip-filen finns en .xd fil som kan öppnas upp med Adobe XD eller Sketch. Om det skulle vara så att du inte kan installera något av programmen så kan du använda dig av https://figpea.com/.
+Du ska i denna inlämningsuppgift bygga upp två sidor för ett företag som heter Crito. Designfilen som ska använda i denna inlämningsuppgift hittar du under kurstillbehör och heter crito - designmall.zip i den zip-filen finns en .xd fil som
+ kan öppnas upp med Adobe XD eller Sketch. Om det skulle vara så att du inte kan installera något av programmen så kan du använda dig av https://figpea.com/.
 
 
 
-Du ska utgå från denna designfil och bygga upp de två sidor som finns presenterade i filen. Det är helt okej om din hemsida skiljer sig lite från designfilen när det kommer till ikoner, bilder, teckensnitt, och viss placering men du ska försöka efterlikna designen så mycket som möjligt.
+Du ska utgå från denna designfil och bygga upp de två sidor som finns presenterade i filen. Det är helt okej om din hemsida skiljer sig lite från designfilen när det kommer till ikoner, bilder, teckensnitt, och viss placering 
+men du ska försöka efterlikna designen så mycket som möjligt.
 
 
 

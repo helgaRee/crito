@@ -954,7 +954,8 @@ header .container .btn-login {
 }
 
 .case > .container > .content-grid .box:hover {
-  text-transform: uppercase;
+  opacity: 0.8;
+  transition: 0.6s;
 }
 
 .subscribe {

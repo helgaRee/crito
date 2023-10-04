@@ -11,7 +11,6 @@
         margin-bottom: 20px;
         margin-top: 20px;
         @media (min-width: 768px) {
-          // margin-bottom: 17px;
           margin-top: 120px;
         }
       }
@@ -108,5 +107,6 @@
   }
 }
 .case > .container > .content-grid .box:hover {
-  text-transform: uppercase;
+  opacity: .8;
+  transition: .6s;
 }
