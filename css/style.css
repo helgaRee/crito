@@ -955,7 +955,7 @@ header .container .btn-login {
 
 .case > .container > .content-grid .box:hover {
   opacity: 0.8;
-  transition: 0.6s;
+  transition: 0.6s ease-in-out;
 }
 
 .subscribe {
@@ -1037,7 +1037,7 @@ header .container .btn-login {
 }
 .subscribe .container form .btn-yellow-scale:hover {
   transform: scale(1.1);
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .team {
@@ -1379,7 +1379,7 @@ header .container .btn-login {
 }
 .articles-news .container .articles a article img:hover {
   opacity: 0.8;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .articles-news .container .articles a article .box-date {
   position: absolute;
@@ -1489,9 +1489,6 @@ header .container .btn-login {
   display: inline-block;
   margin-right: 6px;
 }
-.articles-news .dots .dot:hover {
-  color: #191919;
-}
 .articles-news .dots .dot-active {
   background-color: #191919;
 }
@@ -1595,7 +1592,7 @@ header .container .btn-login {
   }
   .contact-information .container a .item:hover {
     background-color: #F9D783;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
   }
   .contact-information .container a .item:hover h3 {
     text-decoration: underline;
@@ -1607,7 +1604,7 @@ header .container .btn-login {
   .contact-information .container a .item:hover i {
     transform: scale(1.1);
     align-self: flex-start;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
   }
 }
 @media (min-width: 992px) {
@@ -2000,7 +1997,7 @@ footer .bottom .social-media-footer a i {
   color: #fff;
 }
 footer .bottom .social-media-footer a i:hover {
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   transform: scale(1.8);
   color: #F9D783;
 }
@@ -2084,7 +2081,7 @@ h4 {
 }
 .btn-yellow:hover {
   background-color: #191919;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   transform: scale(1.1);
   color: #F0EFE9;
 }
@@ -2105,7 +2102,7 @@ h4 {
 }
 .btn-transparent:hover {
   background-color: #191919;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   transform: scale(1.1);
   color: #F0EFE9;
 }
@@ -2126,7 +2123,7 @@ h4 {
 }
 .btn-black:hover {
   background-color: #F9D783;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   transform: scale(1.1);
   color: #191919;
 }
@@ -2150,7 +2147,7 @@ h4 {
 }
 .btn-circle:hover {
   background-color: #191919;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   transform: scale(1.1);
   color: #F0EFE9;
 }

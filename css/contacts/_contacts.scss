@@ -87,7 +87,7 @@
         width: 420px;
         &:hover {
           background-color: $btn-yellow;
-          transition: 0.5s;
+          transition: 0.5s ease-in-out;
           h3 {
             text-decoration: underline;
             align-self: end;
@@ -98,7 +98,7 @@
           i {
             transform: scale(1.1);
             align-self: flex-start;
-            transition: 0.5s;
+            transition: 0.5s ease-in-out;
           }
         }
       }

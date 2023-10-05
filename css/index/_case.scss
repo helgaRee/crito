@@ -108,5 +108,5 @@
 }
 .case > .container > .content-grid .box:hover {
   opacity: .8;
-  transition: .6s;
+  transition: .6s ease-in-out;
 }
